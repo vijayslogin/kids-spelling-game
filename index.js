@@ -11,7 +11,7 @@ function startGame() {
     var imageArray = []; // initialize an empty array to store the image filenames
     var spellingArray = [];
 
-    var randomImage = "/images/sixteen.jpg";//
+    var randomImage = "./images/sixteen.jpg";//
     spelling = sliceImageName(randomImage).toUpperCase();
     $("#actualImg").attr("src", randomImage); 
     console.log(">>>" + typedSpelling + ">>>" + spelling) ;
@@ -50,7 +50,7 @@ $("#inputText").keypress(function(event) {
     }
 
     if(typedSpelling.length === spelling.length) {
-        console.log(">>>" + typedSpelling + ">>>" + spelling) ;
+        // console.log(">>>" + typedSpelling + ">>>" + spelling) ;
         if(spelling.length !== 0 && typedSpelling === spelling) {
             $("#result").text("Correct.!");
             $("#result").css("color", "green");
