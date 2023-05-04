@@ -23,7 +23,7 @@ function startGame() {
       
       var randomIndex = Math.floor(Math.random() * imageArray.length); // generate a random index
       var randomImage = imageArray[randomIndex]; // get the random image filename
-      $("img").attr("src", randomImage); // add the image to the page
+      $("#actualImg").attr("src", randomImage); // add the image to the page
 
       spelling = sliceImageName(randomImage).toUpperCase();
       console.log(spelling); // "my-image.jpg"
@@ -46,8 +46,12 @@ $("#inputText").keypress(function(event) {
         // console.log(">>>" + typedSpelling + ">>>" + spelling) ;
         if(spelling.length !== 0 && typedSpelling === spelling) {
             $("#result").text("Correct.!");
+            $("#result").css("color", "green");
+            $("body").css("background-image", "url('images/success.gif')");
         }else {
             $("#result").text("Opps :( Wrong.");
+            $("#result").css("color", "red");
+            $("body").css("background-image", "url('images/failure.gif')");
         }
         // Execute a function after 3 seconds
         setTimeout(function() {
