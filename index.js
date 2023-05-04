@@ -22,7 +22,7 @@ function startGame() {
       });
   
       var randomIndex = Math.floor(Math.random() * imageArray.length); // generate a random index
-      var randomImage = imageArray[randomIndex]; // get the random image filename
+      var randomImage = "/images/sixteen.jpg";// imageArray[randomIndex]; // get the random image filename
       console.log("image url >>>> " + randomImage);
       $("#actualImg").attr("src", randomImage); // add the image to the page
 
