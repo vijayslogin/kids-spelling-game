@@ -25,14 +25,14 @@ debugger;
       var randomIndex = Math.floor(Math.random() * imageArray.length); // generate a random index
       var randomImage = imageArray[randomIndex]; // get the random image filename
       $("#actualImg").attr("src", randomImage); // add the image to the page
-
+debugger;
       spelling = sliceImageName(randomImage).toUpperCase();
       console.log(spelling); // "my-image.jpg"
     });
 }
 
 $("#inputText").keypress(function(event) {
-    // console.log(">>>" + typedSpelling + ">>>" + spelling) ;
+    console.log(">>>" + typedSpelling + ">>>" + spelling) ;
     
     if(spelling.length === 0) {
         alert("Start game.!");
@@ -44,7 +44,7 @@ $("#inputText").keypress(function(event) {
     }
 
     if(typedSpelling.length === spelling.length) {
-        // console.log(">>>" + typedSpelling + ">>>" + spelling) ;
+        console.log(">>>" + typedSpelling + ">>>" + spelling) ;
         if(spelling.length !== 0 && typedSpelling === spelling) {
             $("#result").text("Correct.!");
             $("#result").css("color", "green");
@@ -66,6 +66,6 @@ function sliceImageName (imageURL) {
     debugger;
     var imageUrl = imageURL;
     return imageUrl.split('/').pop().split(".")[0];
-    // console.log(imageName); // "my-image.jpg"
+    console.log(imageName); // "my-image.jpg"
 }
   
