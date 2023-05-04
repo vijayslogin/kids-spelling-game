@@ -31,7 +31,7 @@ body {
     margin: auto;
 }
 
-img {
+#actualImg {
     width: 30rem;
     height: 25rem;
     margin: 10px;
