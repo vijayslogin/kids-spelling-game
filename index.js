@@ -31,7 +31,7 @@ function startGame() {
 }
 
 $("#inputText").keypress(function(event) {
-    console.log(">>>" + typedSpelling + ">>>" + spelling) ;
+    // console.log(">>>" + typedSpelling + ">>>" + spelling) ;
     
     if(spelling.length === 0) {
         alert("Start game.!");
@@ -49,6 +49,11 @@ $("#inputText").keypress(function(event) {
         }else {
             $("#result").text("Opps :( Wrong.");
         }
+        // Execute a function after 3 seconds
+        setTimeout(function() {
+            location.reload();
+            startGame();
+        }, 5000);
     }
   });
 
