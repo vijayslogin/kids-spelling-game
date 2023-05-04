@@ -9,13 +9,6 @@ body {
     margin: auto;
 }
 
-.heading {
-    text-align: center;
-    font-size: 5rem;
-    font-family: 'Caveat', cursive;
-    color: #432C7A;
-}
-
 .start-game {
     background-color: #dcd6f7;
     color: #432C7A;
@@ -49,6 +42,3 @@ body {
 #result {
     color: orange;
 }
-
-
-
