@@ -10,7 +10,10 @@ function startGame() {
     var imageFolder = './images/'; // replace with the actual file path to your images folder
     var imageArray = []; // initialize an empty array to store the image filenames
     var spellingArray = [];
-  
+
+    var randomImage = "/images/sixteen.jpg";//
+    spelling = sliceImageName(randomImage).toUpperCase();
+  /*
     // use jQuery's $.get() function to retrieve the list of files in the folder
     $.get(imageFolder, function(data) {
         console.log("data >>> " + data);
@@ -29,6 +32,7 @@ function startGame() {
       spelling = sliceImageName(randomImage).toUpperCase();
       console.log(spelling); // "my-image.jpg"
     });
+    */
 }
 
 $("#inputText").keypress(function(event) {
