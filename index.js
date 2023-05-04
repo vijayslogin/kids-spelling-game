@@ -2,16 +2,17 @@ var spelling = "";
 var typedSpelling = "";
 
 function startGame() {
+debugger;
 
     if($("#result").text() !== "Result here") {
         $("#result").text("");
         location.reload();
     }
-
+debugger;
     var imageFolder = './images/'; // replace with the actual file path to your images folder
     var imageArray = []; // initialize an empty array to store the image filenames
     var spellingArray = [];
-    
+debugger;    
     // use jQuery's $.get() function to retrieve the list of files in the folder
     $.get(imageFolder, function(data) {
       $(data).find('a').each(function() { // loop through each file
@@ -20,7 +21,7 @@ function startGame() {
           imageArray.push(filename); // add the filename to the array
         }
       });
-      
+ debugger;     
       var randomIndex = Math.floor(Math.random() * imageArray.length); // generate a random index
       var randomImage = imageArray[randomIndex]; // get the random image filename
       $("#actualImg").attr("src", randomImage); // add the image to the page
@@ -62,6 +63,7 @@ $("#inputText").keypress(function(event) {
   });
 
 function sliceImageName (imageURL) {
+    debugger;
     var imageUrl = imageURL;
     return imageUrl.split('/').pop().split(".")[0];
     // console.log(imageName); // "my-image.jpg"
