@@ -12,8 +12,8 @@ function startGame() {
     var spellingArray = [];
 
     var randomImage = "/images/sixteen.jpg";//
-    $("#actualImg").attr("src", randomImage);
     spelling = sliceImageName(randomImage).toUpperCase();
+    $("#actualImg").attr("src", randomImage); 
     console.log(">>>" + typedSpelling + ">>>" + spelling) ;
   /*
     // use jQuery's $.get() function to retrieve the list of files in the folder
@@ -50,7 +50,7 @@ $("#inputText").keypress(function(event) {
     }
 
     if(typedSpelling.length === spelling.length) {
-        // console.log(">>>" + typedSpelling + ">>>" + spelling) ;
+        console.log(">>>" + typedSpelling + ">>>" + spelling) ;
         if(spelling.length !== 0 && typedSpelling === spelling) {
             $("#result").text("Correct.!");
             $("#result").css("color", "green");
