@@ -12,6 +12,7 @@ function startGame() {
     var spellingArray = [];
 
     var randomImage = "/images/sixteen.jpg";//
+    $("#actualImg").attr("src", randomImage);
     spelling = sliceImageName(randomImage).toUpperCase();
     console.log(">>>" + typedSpelling + ">>>" + spelling) ;
   /*
