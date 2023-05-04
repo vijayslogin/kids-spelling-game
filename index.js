@@ -8,7 +8,7 @@ function startGame() {
         location.reload();
     }
 
-    var imageFolder = 'images/'; // replace with the actual file path to your images folder
+    var imageFolder = './images/'; // replace with the actual file path to your images folder
     var imageArray = []; // initialize an empty array to store the image filenames
     var spellingArray = [];
     
