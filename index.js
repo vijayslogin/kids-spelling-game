@@ -13,6 +13,7 @@ function startGame() {
 
     var randomImage = "/images/sixteen.jpg";//
     spelling = sliceImageName(randomImage).toUpperCase();
+    console.log(">>>" + typedSpelling + ">>>" + spelling) ;
   /*
     // use jQuery's $.get() function to retrieve the list of files in the folder
     $.get(imageFolder, function(data) {
@@ -69,6 +70,6 @@ function sliceImageName (imageURL) {
 
     var imageUrl = imageURL;
     return imageUrl.split('/').pop().split(".")[0];
-    // console.log(imageName); // "my-image.jpg"
+    console.log(imageName); // "my-image.jpg"
 }
   
