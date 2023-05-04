@@ -1,0 +1,54 @@
+body {
+    background-color: #7C96AB;
+    text-align: center;
+}
+
+.container {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+.heading {
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'Caveat', cursive;
+    color: #432C7A;
+}
+
+.start-game {
+    background-color: #dcd6f7;
+    color: #432C7A;
+    display: block;
+    margin: 0 auto;
+    width: 10rem;
+    height: 5rem;
+    font-size: 18px;
+    border: 5px solid black;
+    border-radius: 25%;
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
+    margin: auto;
+}
+
+img {
+    width: 30rem;
+    height: 25rem;
+    margin: 10px;
+    border-radius: 20%;
+}
+
+.innerDiv {
+    width: 30rem;
+    height: 5rem;
+    margin: 10px;
+    border-radius: 15%;
+    font-size: 3rem;
+}
+
+#result {
+    color: orange;
+}
+
+
+
